@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Reply extends Model
 {
     use HasFactory;
+
+    public $fillable = [
+        'thread_id',
+        'body'
+    ];
 }
